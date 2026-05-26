@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Слова поддержки для малышей</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Baloo+2:wght@500;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --yellow: #FFD95A;
+    --orange: #FF8C42;
+    --pink: #FF6B9D;
+    --mint: #4ECDC4;
+    --lavender: #A78BFA;
+    --sky: #60B8FF;
+    --green: #5DBA7D;
+    --peach: #FFB5A7;
+    --cream: #FFF8EE;
+  }
+
+  body {
+    background: var(--cream);
+    font-family: 'Nunito', sans-serif;
+    padding: 24px;
+  }
+
+  .page-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: #3D2C8D;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+
+  .page-subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .card {
+    border-radius: 24px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: popIn 0.4s ease both;
+    cursor: default;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+  }
+
+  .card:nth-child(1)  { background: linear-gradient(135deg, #FFD95A, #FFAA3B); }
+  .card:nth-child(2)  { background: linear-gradient(135deg, #FF8FAB, #FF6B9D); }
+  .card:nth-child(3)  { background: linear-gradient(135deg, #60D8B8, #4ECDC4); }
+  .card:nth-child(4)  { background: linear-gradient(135deg, #A78BFA, #7C5CBF); }
+  .card:nth-child(5)  { background: linear-gradient(135deg, #60B8FF, #3B8FE0); }
+  .card:nth-child(6)  { background: linear-gradient(135deg, #5DBA7D, #38966A); }
+  .card:nth-child(7)  { background: linear-gradient(135deg, #FFB5A7, #FF8C7A); }
+  .card:nth-child(8)  { background: linear-gradient(135deg, #FFDAA5, #FFA94D); }
+  .card:nth-child(9)  { background: linear-gradient(135deg, #C9B8FF, #A78BFA); }
+  .card:nth-child(10) { background: linear-gradient(135deg, #85E0C2, #4ECDC4); }
+  .card:nth-child(11) { background: linear-gradient(135deg, #FFD95A, #FF8C42); }
+  .card:nth-child(12) { background: linear-gradient(135deg, #FF8FAB, #C94080); }
+  .card:nth-child(13) { background: linear-gradient(135deg, #7DD3E0, #3B8FE0); }
+  .card:nth-child(14) { background: linear-gradient(135deg, #B5E88A, #5DBA7D); }
+  .card:nth-child(15) { background: linear-gradient(135deg, #FFB5A7, #E05A7A); }
+
+  .emoji {
+    font-size: 2.6rem;
+    line-height: 1;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  }
+
+  .category {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .phrase {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.35;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .dots {
+    display: flex; gap: 4px; margin-top: 4px;
+  }
+  .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+  }
+
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.85) translateY(10px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .card:nth-child(1)  { animation-delay: 0.05s; }
+  .card:nth-child(2)  { animation-delay: 0.10s; }
+  .card:nth-child(3)  { animation-delay: 0.15s; }
+  .card:nth-child(4)  { animation-delay: 0.20s; }
+  .card:nth-child(5)  { animation-delay: 0.25s; }
+  .card:nth-child(6)  { animation-delay: 0.30s; }
+  .card:nth-child(7)  { animation-delay: 0.35s; }
+  .card:nth-child(8)  { animation-delay: 0.40s; }
+  .card:nth-child(9)  { animation-delay: 0.45s; }
+  .card:nth-child(10) { animation-delay: 0.50s; }
+  .card:nth-child(11) { animation-delay: 0.55s; }
+  .card:nth-child(12) { animation-delay: 0.60s; }
+  .card:nth-child(13) { animation-delay: 0.65s; }
+  .card:nth-child(14) { animation-delay: 0.70s; }
+  .card:nth-child(15) { animation-delay: 0.75s; }
+
+  @media print {
+    body { background: white; padding: 10px; }
+    .card { break-inside: avoid; box-shadow: none; border: 2px solid rgba(0,0,0,0.08); }
+    .card:hover { transform: none; }
+    .page-subtitle { display: none; }
+  }
+
+  .print-btn {
+    display: block;
+    margin: 32px auto 8px;
+    padding: 14px 36px;
+    background: #3D2C8D;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 16px rgba(61,44,141,0.3);
+    transition: background 0.2s, transform 0.15s;
+  }
+  .print-btn:hover {
+    background: #5540B8;
+    transform: translateY(-2px);
+  }
+
+  @media print { .print-btn { display: none; } }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">💛 Слова поддержки для малышей</h1>
+<p class="page-subtitle">Карточки для детей от 3 лет · Распечатайте и используйте каждый день</p>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="emoji">⭐</div>
+    <div class="category">Когда старается</div>
+    <div class="phrase">Ты так хорошо постарался!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🌟</div>
+    <div class="category">Когда старается</div>
+    <div class="phrase">Я горжусь тобой!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🎉</div>
+    <div class="category">Когда старается</div>
+    <div class="phrase">У тебя получилось — ты молодец!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🤗</div>
+    <div class="category">Когда не вышло</div>
+    <div class="phrase">Ничего, попробуем ещё раз!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">💪</div>
+    <div class="category">Когда не вышло</div>
+    <div class="phrase">Ошибаться — это нормально.</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🙌</div>
+    <div class="category">Когда не вышло</div>
+    <div class="phrase">Я помогу тебе!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🛡️</div>
+    <div class="category">Когда боится</div>
+    <div class="phrase">Я рядом, не бойся.</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🤝</div>
+    <div class="category">Когда боится</div>
+    <div class="phrase">Ты смелый. Я держу тебя за руку.</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🏠</div>
+    <div class="category">Когда боится</div>
+    <div class="phrase">Со мной ты в безопасности.</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🫂</div>
+    <div class="category">Когда грустит</div>
+    <div class="phrase">Поплачь — я обниму тебя.</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">👂</div>
+    <div class="category">Когда грустит</div>
+    <div class="phrase">Я слышу тебя.</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">🌈</div>
+    <div class="category">Когда грустит</div>
+    <div class="phrase">Всё будет хорошо.</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">❤️</div>
+    <div class="category">Каждый день</div>
+    <div class="phrase">Я люблю тебя!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">☀️</div>
+    <div class="category">Каждый день</div>
+    <div class="phrase">Ты моё солнышко!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="emoji">✨</div>
+    <div class="category">Каждый день</div>
+    <div class="phrase">Как хорошо, что ты у меня есть!</div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">🖨️ Распечатать карточки</button>
+
+</body>
+</html>
